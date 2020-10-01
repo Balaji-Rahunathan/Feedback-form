@@ -1,6 +1,6 @@
 var q1a1 = false, q1a2 = false, q2a1 = false, q2a2 = false, q3a1 = false, q3a2 = false, q3a3 = false
 var suggestions = ""
-var url = "http://localhost:4040/api/questions/add"
+var url = "https://api.skillcord.com/api/questions/add"
 
 function formgroupUpdate(id) {
 
@@ -65,7 +65,6 @@ function formgroupUpdate(id) {
     document.getElementById("q3a2").style.color = "#187DD7"
   }
 
-  console.log(q1a1, q1a2, q2a1, q2a2, q3a1, q3a2, q3a3)
 }
 
 function onSubmit() {
@@ -101,7 +100,7 @@ function onSubmit() {
         ]),
     })
       .then(function (data) {
-        console.log('Request succeeded with JSON response', data);
+        window.open("https://slide.skillcord.com/Covid-19/", "_self");
       })
       .catch(function (error) {
         alert("Something went wrong, Please try again")
