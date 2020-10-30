@@ -90,7 +90,7 @@ function onSubmit() {
           {
             "question": "Overall I am happy using the app",
             "question_no": "3",
-            "suggestion": q3a1 ? "Agree" : q3a2 ? "Not Agree" : q3a3 ? "Disagree" : "Agree"
+            "answer": q3a1 ? "Agree" : q3a2 ? "Not Agree" : q3a3 ? "Disagree" : "Agree"
           },
           {
             "question": "Any suggestions welcome",
@@ -100,7 +100,7 @@ function onSubmit() {
         ]),
     })
       .then(function (data) {
-        window.open("https://slide.skillcord.com/Covid-19/", "_self");
+        window.open("https://slide.skillcord.com/contact-plus/", "_self");
       })
       .catch(function (error) {
         alert("Something went wrong, Please try again")
